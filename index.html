@@ -89,6 +89,8 @@ font-size:115%
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .active, .dot:hover {
@@ -118,33 +120,32 @@ font-size:115%
 <h1>1. DeltaForce </h1>
 
 <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="deltaforce1.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="deltaforce2.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="deltaforce3.jpg" style="width:100%">
+  </div>
+  
+  <!-- Fixing Arrows -->
+  <a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+  <a class="next" onclick="plusSlides(1, 0)">❯</a>
+</div>
 
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="deltaforce1.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="deltaforce2.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="deltaforce3.jpg" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:left">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
+<!-- Centered Dots -->
+<div class="dots-container">
+<span class="dot" data-slideshow="0" onclick="currentSlide(1, 0)"></span> 
+<span class="dot" data-slideshow="0" onclick="currentSlide(2, 0)"></span> 
+<span class="dot" data-slideshow="0" onclick="currentSlide(3, 0)"></span> 
+</div>
 
 <p>
 
@@ -156,7 +157,65 @@ Delta Force is a free-to-play first-person shooter developed by TiMi J3 Studio, 
 
 <h1>2. Valorant </h1>
 
+<div class="slideshow-container">
+    <div class="mySlides2 fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="valorant1.webp" style="width:100%">
+    </div>
+    
+    <div class="mySlides2 fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="valorant2.webp" style="width:100%">
+    </div>
+    
+    <div class="mySlides2 fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="valorant3.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+    <a class="next" onclick="plusSlides(1, 1)">❯</a>
+</div>
+<br>
+<div style="text-align:left">
+  <span class="dot" onclick="currentSlide(1, 1)"></span> 
+  <span class="dot" onclick="currentSlide(2, 1)"></span> 
+  <span class="dot" onclick="currentSlide(3, 1)"></span> 
+</div>
+
+<p>Valorant is a free-to-play tactical first-person shooter developed by Riot Games and released on June 2, 2020. <br> The game features a 5v5 format where players choose from a roster of agents, each with unique abilities, <br> and engage in objective-based gameplay, primarily involving planting or defusing a spike. <br> With precise gunplay, strategic team coordination, and a ranked competitive mode, <br> Valorant has become one of the most popular esports titles worldwide.</p>
+
+
 <h1>3. </h1>
+
+<div class="slideshow-container">
+    <div class="mySlides3 fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="valorant1.webp" style="width:100%">
+    </div>
+    
+    <div class="mySlides3 fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="valorant2.webp" style="width:100%">
+    </div>
+    
+    <div class="mySlides3 fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="valorant3.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+    <a class="next" onclick="plusSlides(1, 1)">❯</a>
+</div>
+<br>
+<div style="text-align:left">
+  <span class="dot" onclick="currentSlide(1, 1)"></span> 
+  <span class="dot" onclick="currentSlide(2, 1)"></span> 
+  <span class="dot" onclick="currentSlide(3, 1)"></span> 
+</div>
+
+
+
 <h1>4. </h1>
 
  
@@ -166,35 +225,48 @@ Delta Force is a free-to-play first-person shooter developed by TiMi J3 Studio, 
 
 <script>
 
-let slideIndexes = [1, 1]; 
-    let slideId = ["mySlides", "mySlides2"];
-    
-    function plusSlides(n, no) {
-      showSlides(slideIndexes[no] += n, no);
-    }
-    
-    function currentSlide(n, no) {
-      showSlides(slideIndexes[no] = n, no);
-    }
-    
-    function showSlides(n, no) {
-      let i;
-      let slides = document.getElementsByClassName(slideId[no]);
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndexes[no] = 1}    
-      if (n < 1) {slideIndexes[no] = slides.length}
-      
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      
-      slides[slideIndexes[no] - 1].style.display = "block";  
-    } 
-    
-    window.onload = function() {
-      showSlides(1, 0);
-      showSlides(1, 1);
-    };
+let slideIndexes = [1, 1, 1]; // Add more indices if you have more slideshows
+let slideId = ["mySlides", "mySlides2", "mySlides3"]; // Make sure all slideshows are listed
+
+function plusSlides(n, no) {
+  showSlides(slideIndexes[no] += n, no);
+}
+
+function currentSlide(n, no) {
+  showSlides(slideIndexes[no] = n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let slides = document.getElementsByClassName(slideId[no]);
+  let dots = document.querySelectorAll(`.dot[data-slideshow="${no}"]`); // Identify dots for each slideshow
+  if (n > slides.length) {
+    slideIndexes[no] = 1;
+  }
+  if (n < 1) {
+    slideIndexes[no] = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+
+  slides[slideIndexes[no] - 1].style.display = "block";
+  if (dots.length > 0) {
+    dots[slideIndexes[no] - 1].classList.add("active");
+  }
+}
+
+window.onload = function () {
+  for (let i = 0; i < slideId.length; i++) {
+    showSlides(1, i);
+  }
+};
+
    
     
     </script>
