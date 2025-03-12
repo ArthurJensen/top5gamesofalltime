@@ -147,18 +147,18 @@ p {
   <span class="dot" onclick="currentSlide(2, 1)"></span> 
   <span class="dot" onclick="currentSlide(3, 1)"></span> 
 </div>
-<p></p>
+<p>Valorant is a free-to-play tactical first-person shooter developed by Riot Games and released on June 2, 2020. <br> The game features a 5v5 format where players choose from a roster of agents, each with unique abilities, <br> and engage in objective-based gameplay, primarily involving planting or defusing a spike. <br> With precise gunplay, strategic team coordination, and a ranked competitive mode, <br> Valorant has become one of the most popular esports titles worldwide.</p>
 
 <h1>3. Minecraft</h1>
 <div class="slideshow-container">
   <div class="mySlides3 fade">
-    <img src="minecraft1.jpg" style="width:100%">
+    <img src="minecraft.jpg" style="width:100%">
   </div>
   <div class="mySlides3 fade">
-    <img src="minecraft2.jpg" style="width:100%">
+    <img src="minecraft2.webp" style="width:100%">
   </div>
   <div class="mySlides3 fade">
-    <img src="minecraft3.jpg" style="width:100%">
+    <img src="attack.jpeg" style="width:100%">
   </div>
   <a class="prev" onclick="plusSlides(-1, 2)">❮</a>
   <a class="next" onclick="plusSlides(1, 2)">❯</a>
@@ -168,11 +168,135 @@ p {
   <span class="dot" onclick="currentSlide(2, 2)"></span> 
   <span class="dot" onclick="currentSlide(3, 2)"></span> 
 </div>
-<p>Minecraft is a sandbox game where players can build, explore, and survive in a procedurally generated world.</p>
+<p>Minecraft is a sandbox game developed by Mojang Studios and released in 2011. It allows players to explore a procedurally generated world, gather resources, and build structures.
+The game offers various modes, including Survival, Creative, and Adventure, making it one of the best-selling games of all time.</p>
 
+<h1>4. Grand Theft Auto V</h1>
+<div class="slideshow-container">
+  <div class="mySlides4 fade">
+    <img src="gtav2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides4 fade">
+    <img src="gtav3.jpg" style="width:100%">
+  </div>
+  <div class="mySlides4 fade">
+    <img src="gtav.jfif" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 3)">❮</a>
+  <a class="next" onclick="plusSlides(1, 3)">❯</a>
+</div>
+<div>
+  <span class="dot" onclick="currentSlide(1, 3)"></span> 
+  <span class="dot" onclick="currentSlide(2, 3)"></span> 
+  <span class="dot" onclick="currentSlide(3, 3)"></span> 
+</div>
+<p>Grand Theft Auto V is an action-adventure game developed by Rockstar North and published by Rockstar Games. 
+Set in the fictional state of San Andreas, it follows three protagonists as they commit heists while under pressure from a government agency.</p>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+}
+
+p {
+    font-family: Verdana, sans-serif;
+    font-size: 115%;
+    max-width: 80%;
+    margin: auto;
+    word-wrap: break-word;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+* {box-sizing: border-box;}
+
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.mySlides, .mySlides2, .mySlides3, .mySlides4 {
+    display: none;
+    max-height: 600px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+</style>
+</head>
+
+<body>
+ 
 <script>
-let slideIndexes = [1, 1, 1];
-let slideId = ["mySlides", "mySlides2", "mySlides3"];
+let slideIndexes = [1, 1, 1, 1];
+let slideId = ["mySlides", "mySlides2", "mySlides3", "mySlides4"];
 
 function plusSlides(n, no) {
   showSlides(slideIndexes[no] += n, no);
@@ -201,3 +325,4 @@ window.onload = function () {
 </script>
 </body>
 </html>
+
