@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Force - Top Game</title>
+    <style>
+       
+       body {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+}
+
+p {
+    font-family: Verdana, sans-serif;
+    font-size: 115%;
+    max-width: 80%;
+    margin: auto;
+    word-wrap: break-word;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+* {box-sizing: border-box;}
+
+/* Centering Slideshow */
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+/* Hide images by default */
+.mySlides, .mySlides2, .mySlides3 {
+    display: none;
+    max-height: 600px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+    </style>
+</head>
+<body>
+    <h1>Valorant</h1>
+    
+    <p>Valorant is a tactical first-person shooter (FPS) developed and published by Riot Games. Released in June 2020, the game combines elements of classic shooters like Counter-Strike with hero-based abilities similar to Overwatch. Players compete in 5v5 matches where one team attacks and the other defends, with the primary objective of planting or defusing a bomb-like device called the "Spike." The game has gained massive popularity due to its precise gunplay, strategic depth, and unique agent abilities, making it a standout in the competitive FPS genre.
+
+        One of Valorant’s defining features is its roster of agents, each with unique abilities that complement traditional gunplay. Agents are divided into different roles: Duelists, Controllers, Initiators, and Sentinels, each catering to different playstyles. While aiming and shooting remain the core mechanics, abilities add another layer of strategy by providing vision control, healing, mobility, and crowd control effects. This blend of tactical gunplay and character-based abilities sets Valorant apart from other FPS games, offering players a dynamic and evolving gameplay experience.
+        
+        The game places a strong emphasis on teamwork and communication, making coordination essential for success. Matches are played in a best-of-25 format, where the first team to win 13 rounds emerges victorious. Players must carefully manage their economy, deciding when to buy weapons, shields, and abilities. Map control, strategy, and team synergy often determine the outcome of matches, rewarding players who think critically and adapt to different situations. This level of depth has made Valorant a favorite among esports enthusiasts, leading to the creation of professional leagues and tournaments worldwide.
+        
+        Riot Games has consistently updated Valorant with new agents, maps, and balance changes to keep the game fresh and competitive. The developer actively listens to player feedback, ensuring that the game remains balanced and engaging. Seasonal battle passes and skins allow players to customize their experience, adding aesthetic variety without affecting gameplay. These regular updates have helped maintain a large and dedicated player base, keeping the game relevant in the ever-evolving world of online shooters.
+        
+        Valorant has had a significant impact on the competitive gaming scene, with its professional esports circuit, the Valorant Champions Tour (VCT), attracting top-tier talent from around the world. The game's strategic depth, high skill ceiling, and exciting gameplay have made it one of the most popular FPS titles today. Whether players are casual gamers looking for fun or aspiring professionals aiming for the big leagues, Valorant offers a unique and rewarding experience that continues to grow in popularity.<a href="https://www.playdeltaforce.com/en/">Learn More</a></p>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (let slide of slides) {slide.style.display = "none";}
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
