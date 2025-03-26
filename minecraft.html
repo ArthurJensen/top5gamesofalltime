@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft</title>
+<style>
+body {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+}
+
+p {
+    font-family: Verdana, sans-serif;
+    font-size: 115%;
+    max-width: 80%;
+    margin: auto;
+    word-wrap: break-word;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+* {box-sizing: border-box;}
+
+/* Centering Slideshow */
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+/* Hide images by default */
+.mySlides, .mySlides2, .mySlides3 {
+    display: none;
+    max-height: 600px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+</style>
+</head>
+
+<body>
+<h1>3. Minecraft</h1>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="minecraft.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="minecraft2.webp" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="attack.jpeg" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<div>
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<p>Minecraft is a sandbox game that has captured the imagination of millions of players worldwide since its release in 2011. Created by Markus "Notch" Persson and later acquired by Microsoft, Minecraft allows players to explore a vast, procedurally generated world made up of blocks. Players can mine resources, craft tools and structures, and engage in a variety of activities, from building intricate cities to exploring caves and battling hostile creatures. The game offers different modes, such as Survival, where players manage health and hunger, and Creative, where they have unlimited resources to build freely without constraints. Its simple yet deep mechanics allow for endless creativity, making it a beloved game for all ages.
+
+    One of the key elements that have contributed to Minecraft's enduring success is its modding community. The game's open-ended design has allowed players to create custom mods that add new features, mechanics, and even entire game modes. From new creatures and biomes to complex automation systems, the Minecraft modding scene offers something for everyone. The game also features cross-platform play, allowing players on different devices to join together in the same world. With constant updates, a thriving community, and the ability to personalize the game through mods, Minecraft continues to be a timeless classic, offering new experiences every time it’s played.</p>
+
+
+<script>
+let slideIndex = 1;
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.querySelectorAll(".dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (let slide of slides) {
+    slide.style.display = "none";
+  }
+  for (let dot of dots) {
+    dot.classList.remove("active");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active");
+}
+
+window.onload = function() {
+  showSlides(slideIndex);
+};
+</script>
+</body>
+</html>

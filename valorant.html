@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta Force - Top Game</title>
-    <style>
-       
-       body {
+<style>
+body {
     text-align: center;
     font-family: Verdana, sans-serif;
 }
@@ -36,7 +32,7 @@ p {
 }
 
 /* Hide images by default */
-.mySlides, .mySlides2, .mySlides3 {
+.mySlides2 {
     display: none;
     max-height: 600px;
 }
@@ -65,17 +61,6 @@ p {
     background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
 /* Dots */
 .dot {
     cursor: pointer;
@@ -101,40 +86,63 @@ p {
     from {opacity: .4}
     to {opacity: 1}
 }
-
-    </style>
+</style>
 </head>
+
+<title>Valorant</title>
 <body>
-    <h1>Valorant</h1>
-    
-    <p>Valorant is a tactical first-person shooter (FPS) developed and published by Riot Games. Released in June 2020, the game combines elements of classic shooters like Counter-Strike with hero-based abilities similar to Overwatch. Players compete in 5v5 matches where one team attacks and the other defends, with the primary objective of planting or defusing a bomb-like device called the "Spike." The game has gained massive popularity due to its precise gunplay, strategic depth, and unique agent abilities, making it a standout in the competitive FPS genre.
 
-        One of Valorant’s defining features is its roster of agents, each with unique abilities that complement traditional gunplay. Agents are divided into different roles: Duelists, Controllers, Initiators, and Sentinels, each catering to different playstyles. While aiming and shooting remain the core mechanics, abilities add another layer of strategy by providing vision control, healing, mobility, and crowd control effects. This blend of tactical gunplay and character-based abilities sets Valorant apart from other FPS games, offering players a dynamic and evolving gameplay experience.
-        
-        The game places a strong emphasis on teamwork and communication, making coordination essential for success. Matches are played in a best-of-25 format, where the first team to win 13 rounds emerges victorious. Players must carefully manage their economy, deciding when to buy weapons, shields, and abilities. Map control, strategy, and team synergy often determine the outcome of matches, rewarding players who think critically and adapt to different situations. This level of depth has made Valorant a favorite among esports enthusiasts, leading to the creation of professional leagues and tournaments worldwide.
-        
-        Riot Games has consistently updated Valorant with new agents, maps, and balance changes to keep the game fresh and competitive. The developer actively listens to player feedback, ensuring that the game remains balanced and engaging. Seasonal battle passes and skins allow players to customize their experience, adding aesthetic variety without affecting gameplay. These regular updates have helped maintain a large and dedicated player base, keeping the game relevant in the ever-evolving world of online shooters.
-        
-        Valorant has had a significant impact on the competitive gaming scene, with its professional esports circuit, the Valorant Champions Tour (VCT), attracting top-tier talent from around the world. The game's strategic depth, high skill ceiling, and exciting gameplay have made it one of the most popular FPS titles today. Whether players are casual gamers looking for fun or aspiring professionals aiming for the big leagues, Valorant offers a unique and rewarding experience that continues to grow in popularity.<a href="https://www.playdeltaforce.com/en/">Learn More</a></p>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+<h1>2. Valorant</h1>
+<div class="slideshow-container">
+  <div class="mySlides2 fade">
+    <img src="valorant1.webp" style="width:100%">
+  </div>
+  <div class="mySlides2 fade">
+    <img src="valorant2.webp" style="width:100%">
+  </div>
+  <div class="mySlides2 fade">
+    <img src="valorant3.jpg" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+  <a class="next" onclick="plusSlides(1, 0)">❯</a>
+</div>
+<div>
+  <span class="dot" onclick="currentSlide(1, 0)"></span> 
+  <span class="dot" onclick="currentSlide(2, 0)"></span> 
+  <span class="dot" onclick="currentSlide(3, 0)"></span> 
+</div>
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+<p>
+    *Valorant* is a tactical first-person shooter developed by Riot Games, released in 2020. It features a 5v5 team-based format where players select from a diverse roster of agents, each with unique abilities that add strategic depth to the gameplay. The game’s primary mode, similar to *Counter-Strike*, involves one team attacking by planting a spike (bomb) while the other defends. Players must carefully manage their in-game economy to buy weapons and abilities, making every round a tactical challenge. The maps are designed with various lanes and verticality, encouraging coordinated team play and creative strategies. Riot Games frequently updates the game with new agents, maps, and balance changes to keep the experience fresh and competitive.
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+    Beyond its engaging gameplay, *Valorant* has established a strong presence in the esports scene. With international tournaments like *Valorant Champions* and the *VCT Masters*, the game has attracted professional teams and a massive audience. Its popularity is further boosted by the game's free-to-play model, making it accessible to a wide range of players. Riot Games also emphasizes community engagement, frequently collaborating with streamers and content creators. The game's detailed graphics, vibrant character designs, and immersive soundscapes contribute to its appeal. With continuous updates and a growing competitive scene, *Valorant* remains one of the most prominent titles in the FPS genre.
 
-        function showSlides(n) {
-            let slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (let slide of slides) {slide.style.display = "none";}
-            slides[slideIndex - 1].style.display = "block";
-        }
-    </script>
+</p>
+
+<script>
+let slideIndexes = [1];
+function plusSlides(n, no) {
+  showSlides(slideIndexes[no] += n, no);
+}
+
+function currentSlide(n, no) {
+  showSlides(slideIndexes[no] = n, no);
+}
+
+function showSlides(n, no) {
+  let slides = document.getElementsByClassName("mySlides2");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) slideIndexes[no] = 1;
+  if (n < 1) slideIndexes[no] = slides.length;
+  for (let slide of slides) slide.style.display = "none";
+  for (let dot of dots) dot.classList.remove("active");
+  slides[slideIndexes[no] - 1].style.display = "block";
+  dots[slideIndexes[no] - 1].classList.add("active");
+}
+
+window.onload = function () {
+  showSlides(1, 0);
+};
+</script>
 </body>
 </html>

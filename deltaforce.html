@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta Force - Top Game</title>
-    <style>
-       
-       body {
+<style>
+body {
     text-align: center;
     font-family: Verdana, sans-serif;
 }
@@ -101,40 +97,166 @@ p {
     from {opacity: .4}
     to {opacity: 1}
 }
-
-    </style>
+</style>
 </head>
+
+<title>Delta Force</title>
 <body>
-    <h1>Delta Force</h1>
+<h1>1. Delta Force</h1>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="deltaforce1.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="deltaforce2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="deltaforce3.jpg" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+  <a class="next" onclick="plusSlides(1, 0)">❯</a>
+</div>
+<div>
+  <span class="dot" onclick="currentSlide(1, 0)"></span> 
+  <span class="dot" onclick="currentSlide(2, 0)"></span> 
+  <span class="dot" onclick="currentSlide(3, 0)"></span> 
+</div>
+<p>"Delta Force" is a tactical first-person shooter (FPS) video game developed and published by NovaLogic in 1998. The game was inspired by real-life military operations conducted by the U.S. Army's Delta Force, an elite special operations unit. Unlike many traditional FPS games of the time, Delta Force emphasized strategy, stealth, and open-ended gameplay rather than fast-paced run-and-gun action. It was one of the early games to feature large outdoor environments, allowing players to engage enemies from long distances, which set it apart from other shooters of its era.
+
+    One of Delta Force’s defining features was its voxel-based graphics engine, which allowed for vast landscapes with rolling hills and open fields. This technology gave players an unprecedented sense of scale and realism, as they could engage enemies from extreme distances. The game also introduced bullet ballistics, meaning players had to account for bullet drop when firing at long-range targets. While the graphics were not as detailed as polygon-based engines, the game's environments created an immersive experience that required careful tactical movement and positioning.
     
-    <p>"Delta Force" is a tactical first-person shooter (FPS) video game developed and published by NovaLogic in 1998. The game was inspired by real-life military operations conducted by the U.S. Army's Delta Force, an elite special operations unit. Unlike many traditional FPS games of the time, Delta Force emphasized strategy, stealth, and open-ended gameplay rather than fast-paced run-and-gun action. It was one of the early games to feature large outdoor environments, allowing players to engage enemies from long distances, which set it apart from other shooters of its era.
+    The gameplay in Delta Force focused on realism and strategic combat. Missions often involved objectives such as eliminating enemy forces, rescuing hostages, or destroying enemy equipment. Players could choose their loadouts before missions, selecting from a variety of weapons like sniper rifles, machine guns, and explosives. The AI enemies were designed to be challenging, often using cover and flanking tactics to outmaneuver players. This emphasis on realism made the game appealing to fans of military simulations rather than arcade-style shooters.
+    
+    Multiplayer was another strong aspect of Delta Force, allowing players to engage in large-scale online battles. The game supported both cooperative and competitive modes, with options like team deathmatch and capture the flag. At a time when online gaming was still developing, Delta Force helped pioneer large multiplayer matches with its open-world maps and long-range combat. The multiplayer community thrived for years, with dedicated players forming clans and organizing matches.
+    
+    The success of Delta Force led to several sequels, expanding on its tactical gameplay and improving graphics and mechanics. Titles such as Delta Force 2, Delta Force: Black Hawk Down, and Delta Force: Xtreme refined the formula, adding better physics, improved AI, and enhanced multiplayer features. The franchise remained a staple of tactical shooters for years, influencing later military games like Ghost Recon and ARMA. Even today, Delta Force is remembered fondly as a groundbreaking game that emphasized strategy and realism in an era dominated by fast-paced shooters.</p>
 
-        One of Delta Force’s defining features was its voxel-based graphics engine, which allowed for vast landscapes with rolling hills and open fields. This technology gave players an unprecedented sense of scale and realism, as they could engage enemies from extreme distances. The game also introduced bullet ballistics, meaning players had to account for bullet drop when firing at long-range targets. While the graphics were not as detailed as polygon-based engines, the game's environments created an immersive experience that required careful tactical movement and positioning.
-        
-        The gameplay in Delta Force focused on realism and strategic combat. Missions often involved objectives such as eliminating enemy forces, rescuing hostages, or destroying enemy equipment. Players could choose their loadouts before missions, selecting from a variety of weapons like sniper rifles, machine guns, and explosives. The AI enemies were designed to be challenging, often using cover and flanking tactics to outmaneuver players. This emphasis on realism made the game appealing to fans of military simulations rather than arcade-style shooters.
-        
-        Multiplayer was another strong aspect of Delta Force, allowing players to engage in large-scale online battles. The game supported both cooperative and competitive modes, with options like team deathmatch and capture the flag. At a time when online gaming was still developing, Delta Force helped pioneer large multiplayer matches with its open-world maps and long-range combat. The multiplayer community thrived for years, with dedicated players forming clans and organizing matches.
-        
-        The success of Delta Force led to several sequels, expanding on its tactical gameplay and improving graphics and mechanics. Titles such as Delta Force 2, Delta Force: Black Hawk Down, and Delta Force: Xtreme refined the formula, adding better physics, improved AI, and enhanced multiplayer features. The franchise remained a staple of tactical shooters for years, influencing later military games like Ghost Recon and ARMA. Even today, Delta Force is remembered fondly as a groundbreaking game that emphasized strategy and realism in an era dominated by fast-paced shooters.<a href="https://www.playdeltaforce.com/en/">Learn More</a></p>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+<style>
+body {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+h1 {
+    font-family: Verdana, sans-serif;
+}
 
-        function showSlides(n) {
-            let slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (let slide of slides) {slide.style.display = "none";}
-            slides[slideIndex - 1].style.display = "block";
-        }
-    </script>
+p {
+    font-family: Verdana, sans-serif;
+    font-size: 115%;
+    max-width: 80%;
+    margin: auto;
+    word-wrap: break-word;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+* {box-sizing: border-box;}
+
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.mySlides, .mySlides2, .mySlides3, .mySlides4 {
+    display: none;
+    max-height: 600px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+</style>
+</head>
+
+<body>
+ 
+<script>
+let slideIndexes = [1, 1, 1, 1, 1];
+let slideId = ["mySlides", "mySlides2", "mySlides3", "mySlides4", "mySlides5"];
+
+function plusSlides(n, no) {
+  showSlides(slideIndexes[no] += n, no);
+}
+
+function currentSlide(n, no) {
+  showSlides(slideIndexes[no] = n, no);
+}
+
+function showSlides(n, no) {
+  let slides = document.getElementsByClassName(slideId[no]);
+  let dots = document.querySelectorAll(`.dot[data-slideshow="${no}"]`);
+  if (n > slides.length) slideIndexes[no] = 1;
+  if (n < 1) slideIndexes[no] = slides.length;
+  for (let slide of slides) slide.style.display = "none";
+  for (let dot of dots) dot.classList.remove("active");
+  slides[slideIndexes[no] - 1].style.display = "block";
+  if (dots.length > 0) dots[slideIndexes[no] - 1].classList.add("active");
+}
+
+window.onload = function () {
+  for (let i = 0; i < slideId.length; i++) {
+    showSlides(1, i);
+  }
+};
+</script>
 </body>
 </html>
+
